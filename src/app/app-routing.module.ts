@@ -1,6 +1,6 @@
 import {NgModule} from '@angular/core';
 import {Routes, RouterModule} from '@angular/router';
-import {UpdateHistoryComponent} from './update-history/update-history.component';
+import {UpdateHistoryComponent} from './modules/update-history/update-history.component';
 
 
 const routes: Routes = [

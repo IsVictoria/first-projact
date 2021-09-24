@@ -1,6 +1,8 @@
 <div>
   <p>main-layout works!</p>
-
+  <div *ngFor="let edge of edges | async">
+    <p>{{edge.node.source.commitMessage}}</p>
+  </div>
   <button nz-button nzType="primary">Primary Button</button>
 </div>
 
