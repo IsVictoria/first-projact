@@ -14,13 +14,18 @@ import {NgxsModule} from '@ngxs/store';
 import {NgxsReduxDevtoolsPluginModule} from '@ngxs/devtools-plugin';
 import {NgxsLoggerPluginModule} from '@ngxs/logger-plugin';
 import {UpdateHistoryState} from './store/update-history.state';
-
+import { NzLayoutModule } from 'ng-zorro-antd/layout';
+import { NzDividerModule } from 'ng-zorro-antd/divider';
+import { ItemComponent } from './modules/item/item.component';
+import { NzTagModule } from 'ng-zorro-antd/tag';
+import { NzAvatarModule } from 'ng-zorro-antd/avatar';
 registerLocaleData(en);
 
 @NgModule({
   declarations: [
     AppComponent,
-    UpdateHistoryComponent
+    UpdateHistoryComponent,
+    ItemComponent
   ],
   imports: [
     BrowserModule,
@@ -31,6 +36,10 @@ registerLocaleData(en);
     HttpClientModule,
     BrowserAnimationsModule,
     NzButtonModule,
+    NzLayoutModule,
+    NzTagModule,
+    NzDividerModule,
+    NzAvatarModule,
     NgxsModule.forRoot([
         UpdateHistoryState
       ]

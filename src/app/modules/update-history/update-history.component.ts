@@ -12,8 +12,7 @@ import {IUpdateHistoryPageEdge} from '../../store/update.history.model';
   styleUrls: ['./update-history.component.scss']
 })
 export class UpdateHistoryComponent implements OnInit {
-  @Select(UpdateHistoryState.getEdges) edges: Observable<IUpdateHistoryPageEdge[]>;
-
+  @Select(UpdateHistoryState.getEdges) edges$: Observable<IUpdateHistoryPageEdge[]>;
   constructor(
     private store: Store
   ) {}

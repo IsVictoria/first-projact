@@ -1,0 +1,76 @@
+.item {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  padding:15px 0 15px 15px;
+}
+
+.source {
+  width: 85%;
+}
+
+.title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 50%;
+  color: aquamarine;
+  list-style: none;
+  padding-left: 10px;
+}
+
+.disk {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  margin-right: 7px;
+}
+
+.aquamarine {
+  border: 1px solid aquamarine;
+  background-color: aquamarine;
+}
+
+.red {
+  border: 1px solid red;
+  background-color: red;
+}
+
+.commitMessage {
+  list-style: disc;
+  color: white;
+  padding-right: 10px;
+}
+
+.revision {
+  padding-left: 10px;
+}
+
+.commitAuthor {
+  color: lightsteelblue;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+}
+
+nz-avatar {
+   width: 20px;
+   height: 20px;
+   margin-right: 10px;
+ }
+
+.author {
+  height: 20px;
+}
+
+.metadata {
+  border-left: 1px solid rgba(255, 255, 255, 0.2);
+  padding-left: 20px;
+}
+.metadata p {
+  margin: 0;
+}
+
+

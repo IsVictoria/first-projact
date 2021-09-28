@@ -1,5 +1,44 @@
 
 [nz-button] {
-  margin-right: 8px;
-  margin-bottom: 12px;
+  margin-right: 2px;
+  margin-bottom: 2px;
 }
+.logo {
+  height: 32px;
+  background: rgba(255, 255, 255, 0.2);
+  margin: 16px;
+}
+
+nz-header {
+  background: #001529;
+  padding: 0;
+}
+
+nz-content {
+  margin: 0px;
+  background:#001529;
+}
+
+.wrapperContent{
+  border-left: 1px solid rgba(255, 255, 255, 0.2);
+  margin-left: 10px;
+}
+.inner-content {
+  background: #001529;
+  min-height: 360px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+  margin: 0 10px 0 20px;
+}
+
+nz-footer {
+  text-align: center;
+  background: #001529;
+}
+
+.horizontal {
+  width: 100%;
+}
+
+
+

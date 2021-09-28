@@ -1,0 +1,31 @@
+<div class="item">
+  <div class="source">
+    <div class="title">
+      <div class="disk"
+        [ngClass]="{
+          aquamarine: !errors,
+          red: errors
+           }"
+      ></div>
+      <div class="commitMessage">{{item.node.source.commitMessage}}</div>
+      <nz-divider nzType="vertical"></nz-divider>
+      <div class="revision">{{revision}}</div>
+    </div>
+    <div class="commitAuthor">
+      <div class="avatar">
+      <nz-avatar nzIcon="user" nzSrc="//zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png"></nz-avatar>
+      </div>
+      <div class="author">
+        {{author}}
+        <span>updated</span>
+        {{path}}
+        <span>on</span>
+        {{time | date:'hh:mm'}}
+      </div>
+    </div>
+  </div>
+  <div class="metadata">
+    <p>{{item.node.metadata.name}}</p>
+    <nz-tag [nzColor]="color">{{kind}}</nz-tag>
+  </div>
+</div>
