@@ -1,0 +1,41 @@
+.title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 50%;
+  color: aquamarine;
+  list-style: none;
+  padding-left: 10px;
+}
+
+.disk {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  margin-right: 7px;
+}
+
+.aquamarine {
+  border: 1px solid aquamarine;
+  background-color: aquamarine;
+}
+
+.red {
+  border: 1px solid red;
+  background-color: red;
+}
+
+.commitMessage {
+  list-style: disc;
+  color: white;
+  padding-right: 10px;
+}
+
+nz-divider {
+  height: 17px;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.revision {
+  padding-left: 10px;
+}

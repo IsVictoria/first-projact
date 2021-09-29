@@ -1,0 +1,8 @@
+<div class="title">
+  <div class="disk"
+       [ngClass]="{ aquamarine: !errors, red: errors }"
+  ></div>
+  <div class="commitMessage">{{item.node.source.commitMessage}}</div>
+  <nz-divider nzType="vertical"></nz-divider>
+  <div class="revision">{{revision}}</div>
+</div>
