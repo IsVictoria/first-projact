@@ -19,13 +19,17 @@ import { NzDividerModule } from 'ng-zorro-antd/divider';
 import { ItemComponent } from './modules/item/item.component';
 import { NzTagModule } from 'ng-zorro-antd/tag';
 import { NzAvatarModule } from 'ng-zorro-antd/avatar';
+import { TitleComponent } from './modules/title/title.component';
+import { CommitAuthorComponent } from './modules/commit-author/commit-author.component';
 registerLocaleData(en);
 
 @NgModule({
   declarations: [
     AppComponent,
     UpdateHistoryComponent,
-    ItemComponent
+    ItemComponent,
+    TitleComponent,
+    CommitAuthorComponent
   ],
   imports: [
     BrowserModule,
