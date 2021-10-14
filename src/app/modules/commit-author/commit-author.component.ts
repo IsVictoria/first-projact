@@ -20,8 +20,7 @@ export class CommitAuthorComponent implements OnInit {
   }
 
   get path(): string {
-    // TODO destructing
-    const path = this.item.node.source.path;
+    const { path } = this.item.node.source;
     return path.slice(10);
   }
 

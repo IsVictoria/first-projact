@@ -1,7 +1,7 @@
-import {IFetchUpdateHistoryPageDto, IUpdateHistoryModel} from './update.history.model';
+import { IUpdateHistoryModel } from './update.history.model';
 import {Action, Selector, State, StateContext} from '@ngxs/store';
 import {Injectable} from '@angular/core';
-import {Fetch} from './update.history.actions';
+import {AddFilteredData, Fetch} from './update.history.actions';
 import {UpdateHistoryService} from '../services/update-history.service';
 import {tap} from 'rxjs/operators';
 
@@ -9,7 +9,8 @@ const defaults = {
   edges: [],
   pageInfo: null,
   filters: null,
-  loading: false
+  loading: false,
+  filteredData: []
 };
 
 @State<IUpdateHistoryModel>({
@@ -40,5 +41,10 @@ export class UpdateHistoryState {
         ctx.patchState({edges: response.data.pipeline.history.edges});
       })
     );
+  }
+
+  @Action(AddFilteredData)
+  AddFilteredData(ctx: StateContext<IUpdateHistoryModel>, payload: AddFilteredData) {
+    ctx.patchState({filteredData: payload.payload.data});
   }
 }

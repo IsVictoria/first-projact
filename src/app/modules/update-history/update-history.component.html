@@ -24,11 +24,12 @@
   <nz-layout>
     <nz-header></nz-header>
     <nz-content class="content">
-      <p>Дата</p>
+      <app-filter-form (changes)="formFilter($event)"></app-filter-form>
+     <p>Дата</p>
       <div class="wrapperContent">
         <div class="inner-content">
-            <div *ngFor="let item of edges$ | async">
-            <app-item [item]="item"></app-item>
+            <div *ngFor="let item of filteredValue">
+              <app-item [item]="item"></app-item>
             </div>
         </div>
       </div>
