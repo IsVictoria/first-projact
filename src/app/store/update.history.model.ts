@@ -3,6 +3,7 @@ export interface IUpdateHistoryModel {
   pageInfo: any;
   filters?: IUpdateHistoryFilterArgs;
   loading?: boolean;
+  filteredData?: IUpdateHistoryPageEdge[];
 }
 
 export interface IUpdateHistoryPageEdge {

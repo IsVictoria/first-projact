@@ -1,0 +1,27 @@
+<form class="form" nz-form [formGroup]="form">
+  <nz-form-item class="selectRepo">
+    <nz-form-control [nzErrorTip]="errorTip">
+    <label>Select Repo</label>
+    <input formControlName="selectRepo" class="input" pattern="[a-z]([-a-z0-9]{0,61}[a-z0-9])?" nz-input type="text" id="selectRepo">
+    <ng-template #errorTip let-control>
+      <ng-container *ngIf="control.hasError('pattern')">Введите корректные данные</ng-container>
+    </ng-template>
+    </nz-form-control>
+  </nz-form-item>
+  <nz-form-item class="eventType">
+    <label for="eventType">Event Type</label>
+    <nz-select formControlName="eventType" class="select" id="eventType">
+      <ng-container *ngFor="let type of eventTypes">
+        <nz-option  [nzValue]="type.value" [nzLabel]="type.label" ></nz-option>
+      </ng-container>
+    </nz-select>
+  </nz-form-item>
+  <nz-form-item class="syncStatus">
+    <label for="syncStatus">Sync Status</label>
+    <nz-select formControlName="syncStatus" class="select" id="syncStatus">
+      <ng-container *ngFor="let type of syncStatus">
+        <nz-option [nzValue]="type.value" [nzLabel]="type.label"></nz-option>
+      </ng-container>
+    </nz-select>
+  </nz-form-item>
+</form>

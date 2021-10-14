@@ -21,6 +21,9 @@ import { NzTagModule } from 'ng-zorro-antd/tag';
 import { NzAvatarModule } from 'ng-zorro-antd/avatar';
 import { TitleComponent } from './modules/title/title.component';
 import { CommitAuthorComponent } from './modules/commit-author/commit-author.component';
+import { NzSelectModule } from 'ng-zorro-antd/select';
+import { FilterFormComponent } from './modules/filter-form/filter-form.component';
+
 registerLocaleData(en);
 
 @NgModule({
@@ -29,7 +32,8 @@ registerLocaleData(en);
     UpdateHistoryComponent,
     ItemComponent,
     TitleComponent,
-    CommitAuthorComponent
+    CommitAuthorComponent,
+    FilterFormComponent
   ],
   imports: [
     BrowserModule,
@@ -44,6 +48,7 @@ registerLocaleData(en);
     NzTagModule,
     NzDividerModule,
     NzAvatarModule,
+    NzSelectModule,
     NgxsModule.forRoot([
         UpdateHistoryState
       ]
